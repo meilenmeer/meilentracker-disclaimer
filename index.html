@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haftungsausschluss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Mulish:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:         #f7f6f3;
+      --surface:    #ffffff;
+      --border:     #e4e0d8;
+      --accent:     #1a3a4a;
+      --accent-mid: #2e6280;
+      --text:       #1c1c1c;
+      --text-muted: #6b6560;
+      --tag-bg:     #eaf2f7;
+      --tag-text:   #1e5470;
+      --radius:     10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:         #111518;
+        --surface:    #1a2028;
+        --border:     #2a3540;
+        --accent:     #7ab8d4;
+        --accent-mid: #5a9ab8;
+        --text:       #e8e4de;
+        --text-muted: #8a9aa8;
+        --tag-bg:     #1a2e3a;
+        --tag-text:   #7ab8d4;
+      }
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Mulish', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .wrapper {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 3rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-mid);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      line-height: 1.2;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+    }
+
+    .meta {
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* ── Intro ── */
+    .intro {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--accent-mid);
+    }
+
+    /* ── Sections ── */
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.2s ease;
+    }
+
+    section:hover {
+      border-color: var(--accent-mid);
+    }
+
+    h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2 .icon {
+      font-size: 1rem;
+      flex-shrink: 0;
+      opacity: 0.8;
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    /* ── Highlight box (Google Backup note) ── */
+    .note {
+      background: var(--tag-bg);
+      border-left: 3px solid var(--accent-mid);
+      border-radius: 0 6px 6px 0;
+      padding: 0.75rem 1rem;
+      margin-top: 0.85rem;
+      font-size: 0.88rem;
+      color: var(--tag-text);
+      line-height: 1.65;
+    }
+
+    /* ── Important callout (Haftung) ── */
+    .callout {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-top: 0.85rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .callout strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      section {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <p class="eyebrow">Rechtliche Hinweise</p>
+      <h1>Haftungsausschluss</h1>
+      <div class="meta">
+        <span>App: Meilentracker</span>
+        <span>Rechtsraum: Deutschland</span>
+      </div>
+    </header>
+
+    <p class="intro">
+      Diese App dient ausschließlich der persönlichen Nachverfolgung von Einkäufen und Meilengutschriften
+      im Rahmen von Vielfliegerprogrammen und Bonusprogrammen wie Miles &amp; More oder Payback.
+      Sie stellt kein Finanzprodukt dar und gibt keine Kauf-, Investitions-, steuerlichen oder rechtlichen Empfehlungen.
+    </p>
+
+    <section>
+      <h2>Keine Garantie für Nachtragungen</h2>
+      <p>
+        Die App unterstützt dich dabei, Einkäufe zu dokumentieren und Meilengutschriften nachzuverfolgen.
+        Eine erfolgreiche Nachtragung von Meilen oder Punkten kann jedoch nicht garantiert werden.
+        Ob eine Nachtragung möglich ist, hängt ausschließlich von den jeweiligen Programmkonditionen,
+        Fristen und der Entscheidung des Programmbetreibers ab.
+      </p>
+    </section>
+
+    <section>
+      <h2>Eigenverantwortung des Nutzers</h2>
+      <p>
+        Es liegt in der Verantwortung des Nutzers, seine Berechtigung zur Nachtragung selbst zu prüfen,
+        die geltenden Teilnahmebedingungen des jeweiligen Programms zu kennen, eingetragene Daten auf
+        Richtigkeit und Vollständigkeit zu überprüfen sowie Fristen und Anforderungen der jeweiligen
+        Programme eigenständig einzuhalten.
+      </p>
+    </section>
+
+    <section>
+      <h2>Keine Gewähr für Programmkonditionen</h2>
+      <p>
+        Meilen- und Bonusprogramme können ihre Konditionen, Umrechnungskurse und Teilnahmebedingungen
+        jederzeit und ohne Vorankündigung ändern. Die App bildet solche Änderungen nicht automatisch ab.
+      </p>
+    </section>
+
+    <section>
+      <h2>Datenverlust</h2>
+      <p>
+        Alle Daten werden lokal auf dem Gerät gespeichert. Sofern der Nutzer Google Auto Backup aktiviert hat,
+        können App-Daten automatisch in Google Drive gesichert und auf einem neuen Gerät wiederhergestellt werden.
+        Ohne eine solche externe Sicherung sind alle eingetragenen Daten bei Deinstallation, Gerätewechsel
+        oder Datenverlust unwiderruflich verloren. Eine eigene automatische Datensicherung stellt die App nicht bereit.
+      </p>
+      <div class="note">
+        ℹ️ Bei aktiviertem Google Auto Backup gelten die
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
+           style="color: var(--accent-mid); text-decoration: underline;">
+          Datenschutzbestimmungen von Google
+        </a>.
+      </div>
+    </section>
+
+    <section>
+      <h2>Technische Fehler &amp; Kompatibilität</h2>
+      <p>
+        Die App wird ohne Gewähr auf fehlerfreien Betrieb bereitgestellt. Fehlfunktionen, Abstürze oder
+        fehlerhafte Berechnungen können nicht vollständig ausgeschlossen werden. Ein fehlerfreier Betrieb
+        auf allen Geräten sowie nach OS-Updates oder Systemänderungen kann nicht garantiert werden.
+      </p>
+    </section>
+
+    <section>
+      <h2>Drittanbieter-Links</h2>
+      <p>
+        Die App enthält Links zu externen Websites von Programmanbietern wie Miles &amp; More oder Payback.
+        Für die Inhalte, Verfügbarkeit oder Richtigkeit dieser Seiten wird keine Verantwortung übernommen.
+      </p>
+    </section>
+
+    <section>
+      <h2>Gerätesicherheit</h2>
+      <p>
+        Da alle Daten lokal auf dem Gerät gespeichert sind, sind sie bei Verlust oder Diebstahl des Geräts
+        für Dritte potenziell zugänglich. Für den Schutz des Geräts und der darauf gespeicherten Daten
+        ist der Nutzer selbst verantwortlich.
+      </p>
+    </section>
+
+    <section>
+      <h2>Haftungsbeschränkung</h2>
+      <p>
+        Die Nutzung dieser App erfolgt auf eigene Verantwortung. Für entgangene Meilen, Punkte oder
+        sonstige Nachteile, die auf fehlerhaften Eintragungen, abgelaufenen Fristen, ablehnenden
+        Entscheidungen der Programmbetreiber oder technischen Fehlern beruhen, wird keine Haftung übernommen.
+      </p>
+      <div class="callout">
+        <strong>Ausnahmen:</strong> Diese Haftungsbeschränkung gilt nicht für Schäden aus der Verletzung
+        des Lebens, des Körpers oder der Gesundheit sowie für Schäden, die auf vorsätzlichem oder
+        grob fahrlässigem Verhalten beruhen.
+      </div>
+    </section>
+
+    <section>
+      <h2>Kein Ersatz für professionelle Beratung</h2>
+      <p>
+        Die App ersetzt keine rechtliche, steuerliche oder finanzielle Beratung durch qualifizierte Fachleute.
+      </p>
+    </section>
+
+    <section>
+      <h2>Impressum</h2>
+      <p>
+        Die vollständigen Anbieterangaben sind im Impressum der App einsehbar.
+      </p>
+    </section>
+
+    <section>
+      <h2>Änderungsvorbehalt</h2>
+      <p>
+        Dieser Haftungsausschluss kann angepasst werden. Bei wesentlichen Änderungen werden Nutzer
+        im Rahmen eines App-Updates oder durch einen In-App-Hinweis informiert.
+        Es gilt jeweils die aktuelle in der App hinterlegte Version.
+      </p>
+    </section>
+
+    <section>
+      <h2>Anwendbares Recht</h2>
+      <p>
+        Es gilt das Recht der Bundesrepublik Deutschland.
+      </p>
+    </section>
+
+    <section>
+      <h2>Salvatorische Klausel</h2>
+      <p>
+        Sollte eine Bestimmung dieses Haftungsausschlusses unwirksam sein, bleibt die Wirksamkeit
+        der übrigen Bestimmungen davon unberührt.
+      </p>
+    </section>
+
+    <footer>
+      <p>Zuletzt aktualisiert: Juni 2026 &nbsp;·&nbsp; Anwendbares Recht: Deutschland</p>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -159,7 +159,7 @@
       line-height: 1.8;
     }
 
-    /* ── Highlight box (Google Backup note) ── */
+    /* ── Highlight box (Backup-Hinweis) ── */
     .note {
       background: var(--tag-bg);
       border-left: 3px solid var(--accent-mid);
@@ -256,17 +256,32 @@
     <section>
       <h2>Datenverlust</h2>
       <p>
-        Alle Daten werden lokal auf dem Gerät gespeichert. Sofern der Nutzer Google Auto Backup aktiviert hat,
-        können App-Daten automatisch in Google Drive gesichert und auf einem neuen Gerät wiederhergestellt werden.
-        Ohne eine solche externe Sicherung sind alle eingetragenen Daten bei Deinstallation, Gerätewechsel
-        oder Datenverlust unwiderruflich verloren. Eine eigene automatische Datensicherung stellt die App nicht bereit.
+        Alle Daten werden lokal auf dem Gerät gespeichert. Eine eigene automatische Datensicherung stellt die
+        App nicht bereit; sie nutzt ausschließlich die Sicherungsfunktion des jeweiligen Betriebssystems.
+      </p>
+      <p>
+        <strong>Android:</strong> Sofern der Nutzer Google Auto Backup aktiviert hat, können App-Daten
+        automatisch in Google Drive gesichert und auf einem neuen Gerät wiederhergestellt werden.
+      </p>
+      <p>
+        <strong>iOS:</strong> Ist auf dem Gerät das iCloud-Backup aktiviert, sichert das Betriebssystem die
+        App-Daten automatisch in das persönliche iCloud-Konto des Nutzers und stellt sie auf einem neuen Gerät
+        wieder her. Die Sicherung wird nicht durch die App ausgelöst und kann in den iOS-Einstellungen
+        deaktiviert oder für diese App gezielt ausgenommen werden.
+      </p>
+      <p>
+        Ohne eine solche Sicherung sind alle eingetragenen Daten bei Deinstallation, Gerätewechsel oder
+        Datenverlust unwiderruflich verloren. Ob eine Sicherung tatsächlich vorliegt und wiederherstellbar ist,
+        liegt außerhalb unseres Einflussbereichs.
       </p>
       <div class="note">
-        ℹ️ Bei aktiviertem Google Auto Backup gelten die
+        ℹ️ Bei aktivierter Sicherung gelten die
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
            style="color: var(--accent-mid); text-decoration: underline;">
-          Datenschutzbestimmungen von Google
-        </a>.
+          Datenschutzbestimmungen von Google</a> bzw. die
+        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer"
+           style="color: var(--accent-mid); text-decoration: underline;">
+          Datenschutzerklärung von Apple</a>.
       </div>
     </section>
 
@@ -327,15 +342,15 @@
         Personen stehen in der
         <a href="https://meilenmeer.github.io/meilentracker-privacy-policy/" target="_blank" rel="noopener noreferrer"
            style="color: var(--accent-mid); text-decoration: underline;">
-          Datenschutzerklärung
-        </a>.
+          Datenschutzerklärung</a>.
       </p>
     </section>
 
     <section>
       <h2>Impressum</h2>
       <p>
-        Die vollständigen Anbieterangaben sind im Impressum der App einsehbar.
+        Die vollständigen Anbieterangaben finden Sie im
+        <a href="https://dein-impressum.de/meilenmeer" target="_blank" rel="noopener noreferrer" style="color: var(--accent-mid); text-decoration: underline;">Impressum</a>.
       </p>
     </section>
 
@@ -364,7 +379,12 @@
     </section>
 
     <footer>
-      <p>Zuletzt aktualisiert: September 2026 &nbsp;·&nbsp; Anwendbares Recht: Deutschland</p>
+      <p>
+        <a href="https://dein-impressum.de/meilenmeer" target="_blank" rel="noopener noreferrer" style="color: var(--accent-mid); text-decoration: underline;">Impressum</a>
+        &nbsp;·&nbsp;
+        <a href="https://meilenmeer.github.io/meilentracker-privacy-policy/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-mid); text-decoration: underline;">Datenschutzerklärung</a>
+      </p>
+      <p style="margin-top: 0.5rem;">Zuletzt aktualisiert: September 2026 &nbsp;·&nbsp; Anwendbares Recht: Deutschland</p>
     </footer>
 
   </div>
